@@ -1,0 +1,41 @@
+#define DEBUG
+// DM Environment file for TextMUD.dme.
+// All manual changes should be made outside the BEGIN_ and END_ blocks.
+// New source code should be placed in .dm files: choose File/New --> Code File.
+
+// BEGIN_INTERNALS
+/*
+FILE: 
+*/
+// END_INTERNALS
+
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "Programming"
+#define FILE_DIR "Programming/Classes"
+#define FILE_DIR "Programming/Locations"
+#define FILE_DIR "Programming/Login"
+#define FILE_DIR "Programming/Player"
+#define FILE_DIR "Programming/Races"
+#define FILE_DIR "Programming/Skills"
+#define FILE_DIR "Programming/Stats"
+// END_FILE_DIR
+
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+
+// BEGIN_INCLUDE
+#include "Classes.dm"
+#include "Interface.dmf"
+#include "Programming\_Main.dm"
+#include "Programming\Classes\_Main.dm"
+#include "Programming\Locations\_Main.dm"
+#include "Programming\Login\_Commands.dm"
+#include "Programming\Login\_Main.dm"
+#include "Programming\Login\_Messages.dm"
+#include "Programming\Player\_Main.dm"
+#include "Programming\Races\_Main.dm"
+#include "Programming\Skills\_Main.dm"
+#include "Programming\Stats\_Main.dm"
+// END_INCLUDE
+

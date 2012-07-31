@@ -1,0 +1,6 @@
+mob/Login()
+	src.client.Set_Resolution()
+	Center_Window(src,"Default")
+	Center_Window(src,"Creation")
+	Center_Window(src,"Selections")
+	..()
