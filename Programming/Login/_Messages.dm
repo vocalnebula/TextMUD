@@ -103,8 +103,8 @@ var
 	<center>##################################################
 		<br>#------------------------------------------------#
 		<br>#---------------- <font color = red><u>TextMUD Races</u></font> -----------------#
-		<br>#-------------------- <font color = yellow>Human</font> ---------------------#
-		<br>#-------------------- <font color = yellow>Wadka</font> ---------------------#
+		<br>#------------------ <font color = green>+</font> <font color = yellow>Human</font> <font color = blue>+</font> -------------------#
+		<br>#------------------ <font color = blue>+</font> <font color = yellow>Wakda</font> <font color = green>+</font> -------------------#
 		<br>#------------------------------------------------#
 		<br>#----------------- <font color = yellow>Instructions</font> -----------------#
 		<br>#--- <font color = yellow>To view a race, simply type <font color = green>view</font> <font color = #9900CC>racename</font></font> --#

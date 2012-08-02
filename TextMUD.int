@@ -1,11 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
+WINDOW: Classes.dm;Programming\_Main.dm;Programming\Classes\_Main.dm;Programming\Races\_Main.dm;Programming\Login\_Commands.dm;Programming\Login\_Main.dm;Programming\Login\_Messages.dm
 LAST_COMPILE_VERSION: 496.1145
-WINDOW: Classes.dm;Programming\_Main.dm;Programming\Classes\_Main.dm;Programming\Races\_Main.dm
-DIR: Programming 
-FILE: Programming\Races\_Main.dm
-LAST_COMPILE_TIME: 1343793435
+DIR: Programming Programming\Classes Programming\Login Programming\Races 
+FILE: Programming\Login\_Messages.dm
+LAST_COMPILE_TIME: 1343881489
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS
