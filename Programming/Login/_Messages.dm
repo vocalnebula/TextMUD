@@ -99,3 +99,30 @@ var
 		<br>#------------------------------------------------#
 		<br>##################################################
 	"}
+	const/Race_Selection = {"
+	<center>##################################################
+		<br>#------------------------------------------------#
+		<br>#---------------- <font color = red><u>TextMUD Races</u></font> -----------------#
+		<br>#-------------------- <font color = yellow>Human</font> ---------------------#
+		<br>#-------------------- <font color = yellow>Wadka</font> ---------------------#
+		<br>#------------------------------------------------#
+		<br>#----------------- <font color = yellow>Instructions</font> -----------------#
+		<br>#--- <font color = yellow>To view a race, simply type <font color = green>view</font> <font color = #9900CC>racename</font></font> --#
+		<br>#--- <font color = yellow>To pick a race, simply type <font color = green>pick</font> <font color = #9900CC>racename</font></font> --#
+		<br>#------------------------------------------------#
+		<br>#--- <font color = yellow>You can cancel the selection process at</font> ----#
+		<br># <font color = yellow>anytime by simply typing <font color = green>quit</font> to exit the game</font> #
+		<br>#------------------------------------------------#
+		<br>#------------------------------------------------#
+		<br>##################################################
+	"}
+	const/Invalid_Format = {"
+	<center>##################################################
+		<br>#------------------------------------------------#
+		<br>#------------------------------------------------#
+		<br>#---------------- <font color = red><u>Invalid format</u></font> ----------------#
+		<br>#------------- <font color = yellow>Try <font color = green>action</font> <font color = #9900CC>racename</font></font>  --------------#
+		<br>#------------------------------------------------#
+		<br>#------------------------------------------------#
+		<br>##################################################
+	"}

@@ -828,7 +828,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		command = ""
+		command = "RaceChoose"
 		multi-line = false
 		is-password = false
 		no-command = false
