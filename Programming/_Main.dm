@@ -22,7 +22,9 @@ client
 	New()
 		..()
 		mob << output(Opening_Message,"Creating")
-
+world/New()
+	..()
+	world.log = "Errors.txt"
 client
 	var
 		X_Resolution

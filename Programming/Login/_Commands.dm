@@ -35,19 +35,16 @@ client
 							<center>##################################################
 								<br>#------------------------------------------------#
 								<br>#------------------------------------------------#
-								<br>#------------------- <u><font color = red>+ [R.Name] +</u> ------------------#
-								<br>
-								<br><font color = yellow>[R.Description]</font>
-								<br>
-								<br>#----------------- <u><font color = blue>+ Alliances +</font></u> ----------------#
-								<br>
+								[Fit_Text("+ [R.Name] +","Red")]
+								[Fit_Text(R.Description)]
+								<br>#------------------------------------------------#
+								<br>#----------------- <u><font color = #66CCFF>+ Alliances +</font></u> ----------------#
 							"}
 							for(var/V in R.Alliances)
-								Message += "<br><font color = yellow>[V]</font>"
+								Message += "[Fit_Text(V)]"
 							Message += {"
-								<br>
 								<br>#------------------------------------------------#
-								<br>#--- <font color = yellow>To pick this race, simply type <font color = green>pick</font> <font color = #9900CC>[R.Name]</font></font> --#
+								<br>#--- <font color = yellow>To pick this race, simply type <font color = green>pick</font> <font color = #9900CC>race</font></font> ---#
 								<br>#- <font color = yellow>To return to the selection screen, type <font color = green>back</font></font> -#
 								<br>#------------------------------------------------#
 								<br>#------------------------------------------------#
@@ -76,6 +73,7 @@ client
 				return
 			winshow(usr,"Creation",0)
 			winshow(usr,"Selections",1)
+			winset(usr,"Selection","focus=true")
 			Window_Refresh(usr,0,null,"SelectionO",Race_Selection)
 		Creation(T as text)
 			if(!T)
@@ -124,7 +122,7 @@ client
 					<br>#------------------------------------------------#
 					<br>#------------------------------------------------#
 					<br>#----------------- <font color = yellow>Is your name</font> -----------------#
-					<br><font color = red>[T]</font>
+					[Fit_Text(T,"Red")]
 					<br>#------------------------------------------------#
 					<br>#---- <font color = yellow>Type <font color = green>yes</font> to confirm and <font color = green>no</font> to decline</font> -----#
 					<br>#------------------------------------------------#
