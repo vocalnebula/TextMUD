@@ -1,61 +1,5 @@
 client
 	verb
-		RaceChoose(T as text)
-			if(!T)
-				return
-			var
-				Action = null
-				Space = findtext(T," ")
-				Race = null
-				Snippet = T
-				Spaces = 0
-			while(1)
-				if(findtext(Snippet," "))
-					var/Spaced = findtext(Snippet," ",1)
-					Spaces ++
-					Snippet = copytext(Snippet,Spaced + 1, lentext(Snippet) + 1)
-				else
-					break
-			if(Spaces > 1)
-				Window_Refresh(usr,0,null,"SelectionO",Invalid_Format)
-				return
-			var/list/Races = list()
-			for(var/V in typesof(/Race))
-				if(V == "Race/")
-					return
-				var/Race/R = text2path("[V]")
-				Races += new R
-			Action = copytext(T,1,Space)
-			Race = copytext(T,Space + 1, lentext(T) + 1)
-			switch(ckey(Action))
-				if("view")
-					for(var/Race/R in Races)
-						if(ckey(R.Name) == ckey(Race))
-							var/Message = {"
-							<center>##################################################
-								<br>#------------------------------------------------#
-								<br>#------------------------------------------------#
-								[Fit_Text("+ [R.Name] +","Red")]
-								[Fit_Text(R.Description)]
-								<br>#------------------------------------------------#
-								<br>#----------------- <u><font color = #66CCFF>+ Alliances +</font></u> ----------------#
-							"}
-							for(var/V in R.Alliances)
-								Message += "[Fit_Text(V)]"
-							Message += {"
-								<br>#------------------------------------------------#
-								<br>#--- <font color = yellow>To pick this race, simply type <font color = green>pick</font> <font color = #9900CC>race</font></font> ---#
-								<br>#- <font color = yellow>To return to the selection screen, type <font color = green>back</font></font> -#
-								<br>#------------------------------------------------#
-								<br>#------------------------------------------------#
-								<br>##################################################
-							"}
-							Window_Refresh(usr,0,null,"SelectionO",Message)
-							return
-				if("pick")
-					world << output("pick","SelectionO")
-				if("back")
-					Window_Refresh(usr,0,null,"SelectionO",Race_Selection)
 		Answer(T as text)
 			if(!T)
 				return
@@ -122,7 +66,7 @@ client
 					<br>#------------------------------------------------#
 					<br>#------------------------------------------------#
 					<br>#----------------- <font color = yellow>Is your name</font> -----------------#
-					[Fit_Text(T,"Red")]
+					[Fit_Text(T,"White")]
 					<br>#------------------------------------------------#
 					<br>#---- <font color = yellow>Type <font color = green>yes</font> to confirm and <font color = green>no</font> to decline</font> -----#
 					<br>#------------------------------------------------#

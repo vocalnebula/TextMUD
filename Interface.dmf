@@ -324,6 +324,97 @@ window "Creation"
 		align = center
 		text-wrap = false
 
+window "DEBUG"
+	elem "DEBUG"
+		type = MAIN
+		pos = 281,0
+		size = 300x300
+		anchor1 = none
+		anchor2 = none
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = none
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = none
+		drop-zone = false
+		right-click = false
+		saved-params = "pos;size;is-minimized;is-maximized"
+		on-size = ""
+		title = "DEBUGer"
+		titlebar = true
+		statusbar = false
+		can-close = true
+		can-minimize = true
+		can-resize = true
+		is-pane = false
+		is-minimized = false
+		is-maximized = false
+		can-scroll = none
+		icon = ""
+		image = ""
+		image-mode = stretch
+		keep-aspect = false
+		transparent-color = none
+		alpha = 255
+		macro = ""
+		menu = ""
+		on-close = ""
+	elem "DEBUGI"
+		type = INPUT
+		pos = 0,280
+		size = 300x20
+		anchor1 = 0,93
+		anchor2 = 100,100
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #000000
+		background-color = #ffffff
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = false
+		border = sunken
+		drop-zone = false
+		right-click = false
+		saved-params = ""
+		on-size = ""
+		command = "DEBUGs"
+		multi-line = false
+		is-password = false
+		no-command = false
+	elem "DEBUG"
+		type = OUTPUT
+		pos = 0,0
+		size = 300x280
+		anchor1 = 0,0
+		anchor2 = 100,93
+		font-family = ""
+		font-size = 0
+		font-style = ""
+		text-color = #ff0000
+		background-color = #ffffff
+		is-visible = true
+		is-disabled = false
+		is-transparent = false
+		is-default = true
+		border = sunken
+		drop-zone = false
+		right-click = false
+		saved-params = "max-lines"
+		on-size = ""
+		link-color = #0000ff
+		visited-color = #ff00ff
+		style = ""
+		enable-http-images = false
+		max-lines = 1000
+		image = ""
+
 window "Default"
 	elem "Default"
 		type = MAIN
@@ -538,7 +629,7 @@ window "Selections"
 	elem "Selections"
 		type = MAIN
 		pos = 281,0
-		size = 640x484
+		size = 640x557
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -576,8 +667,8 @@ window "Selections"
 		on-close = ""
 	elem "7"
 		type = LABEL
-		pos = 0,459
-		size = 640x22
+		pos = 0,529
+		size = 640x24
 		anchor1 = 0,95
 		anchor2 = 100,99
 		font-family = "Courier"
@@ -602,8 +693,8 @@ window "Selections"
 		text-wrap = false
 	elem "6"
 		type = LABEL
-		pos = 624,77
-		size = 16x387
+		pos = 624,89
+		size = 16x445
 		anchor1 = 98,16
 		anchor2 = 100,96
 		font-family = "Courier"
@@ -628,8 +719,8 @@ window "Selections"
 		text-wrap = false
 	elem "5"
 		type = LABEL
-		pos = 0,77
-		size = 16x387
+		pos = 0,89
+		size = 16x445
 		anchor1 = 0,16
 		anchor2 = 3,96
 		font-family = "Courier"
@@ -654,8 +745,8 @@ window "Selections"
 		text-wrap = false
 	elem "SelectionO"
 		type = OUTPUT
-		pos = 16,86
-		size = 608x352
+		pos = 16,99
+		size = 608x405
 		anchor1 = 3,18
 		anchor2 = 98,90
 		font-family = "Courier"
@@ -680,8 +771,8 @@ window "Selections"
 		image = ""
 	elem "4"
 		type = LABEL
-		pos = 624,17
-		size = 16x43
+		pos = 624,20
+		size = 16x48
 		anchor1 = 98,4
 		anchor2 = 100,12
 		font-family = "Courier"
@@ -706,8 +797,8 @@ window "Selections"
 		text-wrap = false
 	elem "3"
 		type = LABEL
-		pos = 0,17
-		size = 16x43
+		pos = 0,20
+		size = 16x48
 		anchor1 = 0,4
 		anchor2 = 3,12
 		font-family = "Courier"
@@ -732,8 +823,8 @@ window "Selections"
 		text-wrap = false
 	elem "Label"
 		type = LABEL
-		pos = 40,8
-		size = 560x60
+		pos = 40,10
+		size = 560x68
 		anchor1 = 6,2
 		anchor2 = 94,14
 		font-family = "Courier"
@@ -758,8 +849,8 @@ window "Selections"
 		text-wrap = false
 	elem "2"
 		type = LABEL
-		pos = 0,60
-		size = 640x22
+		pos = 0,68
+		size = 640x26
 		anchor1 = 0,12
 		anchor2 = 100,17
 		font-family = "Courier"
@@ -785,7 +876,7 @@ window "Selections"
 	elem "1"
 		type = LABEL
 		pos = 0,0
-		size = 640x21
+		size = 640x24
 		anchor1 = 0,0
 		anchor2 = 100,4
 		font-family = "Courier"
@@ -810,8 +901,8 @@ window "Selections"
 		text-wrap = false
 	elem "Selection"
 		type = INPUT
-		pos = 16,438
-		size = 608x21
+		pos = 16,504
+		size = 608x25
 		anchor1 = 3,90
 		anchor2 = 98,95
 		font-family = "Courier"

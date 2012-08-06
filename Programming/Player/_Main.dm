@@ -1,3 +1,6 @@
+mob/var
+	Class_Selection = null
+	Race_Selection = null
 Player
 	parent_type = /mob
 	var
