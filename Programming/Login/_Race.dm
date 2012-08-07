@@ -92,7 +92,7 @@ client
 								[Fit_Text(" <u>+ [C.Class] +</u> ","#CCFFCC",1)]
 								[Fit_Text(C.Description)]
 								<br>#------------------------------------------------#
-								[Fit_Text(" <u>Starting Abilities</u> ","Green",1)]
+								[Fit_Text(" <u>+ Starting Abilities +</u> ","Green",1)]
 							"}
 							for(var/V in C.Starting_Abilities)
 								Message += "[Fit_Text(V)]"

@@ -629,7 +629,7 @@ window "Selections"
 	elem "Selections"
 		type = MAIN
 		pos = 281,0
-		size = 640x557
+		size = 675x623
 		anchor1 = none
 		anchor2 = none
 		font-family = ""
@@ -667,8 +667,8 @@ window "Selections"
 		on-close = ""
 	elem "7"
 		type = LABEL
-		pos = 0,529
-		size = 640x24
+		pos = 0,591
+		size = 675x27
 		anchor1 = 0,95
 		anchor2 = 100,99
 		font-family = "Courier"
@@ -685,7 +685,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "###############################################################################"
+		text = "####################################################################################"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -693,8 +693,8 @@ window "Selections"
 		text-wrap = false
 	elem "6"
 		type = LABEL
-		pos = 624,89
-		size = 16x445
+		pos = 658,99
+		size = 17x499
 		anchor1 = 98,16
 		anchor2 = 100,96
 		font-family = "Courier"
@@ -711,7 +711,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#"
+		text = "#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -719,8 +719,8 @@ window "Selections"
 		text-wrap = false
 	elem "5"
 		type = LABEL
-		pos = 0,89
-		size = 16x445
+		pos = 0,99
+		size = 17x499
 		anchor1 = 0,16
 		anchor2 = 3,96
 		font-family = "Courier"
@@ -737,7 +737,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#"
+		text = "#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -745,8 +745,8 @@ window "Selections"
 		text-wrap = false
 	elem "SelectionO"
 		type = OUTPUT
-		pos = 16,99
-		size = 608x405
+		pos = 17,111
+		size = 641x452
 		anchor1 = 3,18
 		anchor2 = 98,90
 		font-family = "Courier"
@@ -771,8 +771,8 @@ window "Selections"
 		image = ""
 	elem "4"
 		type = LABEL
-		pos = 624,20
-		size = 16x48
+		pos = 658,22
+		size = 17x54
 		anchor1 = 98,4
 		anchor2 = 100,12
 		font-family = "Courier"
@@ -789,7 +789,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "#\n#"
+		text = "#\n#\n#\n#"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -797,8 +797,8 @@ window "Selections"
 		text-wrap = false
 	elem "3"
 		type = LABEL
-		pos = 0,20
-		size = 16x48
+		pos = 0,22
+		size = 17x54
 		anchor1 = 0,4
 		anchor2 = 3,12
 		font-family = "Courier"
@@ -815,7 +815,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "#\n#"
+		text = "#\n#\n#\n#"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -823,8 +823,8 @@ window "Selections"
 		text-wrap = false
 	elem "Label"
 		type = LABEL
-		pos = 40,10
-		size = 560x68
+		pos = 42,11
+		size = 591x77
 		anchor1 = 6,2
 		anchor2 = 94,14
 		font-family = "Courier"
@@ -849,8 +849,8 @@ window "Selections"
 		text-wrap = false
 	elem "2"
 		type = LABEL
-		pos = 0,68
-		size = 640x26
+		pos = 0,76
+		size = 675x29
 		anchor1 = 0,12
 		anchor2 = 100,17
 		font-family = "Courier"
@@ -867,7 +867,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "###############################################################################"
+		text = "####################################################################################"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -876,7 +876,7 @@ window "Selections"
 	elem "1"
 		type = LABEL
 		pos = 0,0
-		size = 640x24
+		size = 675x26
 		anchor1 = 0,0
 		anchor2 = 100,4
 		font-family = "Courier"
@@ -893,7 +893,7 @@ window "Selections"
 		right-click = false
 		saved-params = ""
 		on-size = ""
-		text = "###############################################################################"
+		text = "####################################################################################"
 		image = ""
 		image-mode = center
 		keep-aspect = false
@@ -901,8 +901,8 @@ window "Selections"
 		text-wrap = false
 	elem "Selection"
 		type = INPUT
-		pos = 16,504
-		size = 608x25
+		pos = 17,563
+		size = 641x28
 		anchor1 = 3,90
 		anchor2 = 98,95
 		font-family = "Courier"
