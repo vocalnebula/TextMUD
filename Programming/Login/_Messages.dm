@@ -99,26 +99,7 @@ var
 		<br>#------------------------------------------------#
 		<br>##################################################
 	"}
-	Race_Selection = {"
-	<center>##################################################
-		<br>#------------------------------------------------#
-		<br>#---------------- <font color = red><u>TextMUD Races</u></font> -----------------#
-		<br>#------------------ <font color = green>+</font> <font color = yellow>Human</font> <font color = blue>+</font> -------------------#
-		<br>#------------------ <font color = blue>+</font> <font color = yellow>Wakda</font> <font color = green>+</font> -------------------#
-		<br>#------------------ <font color = red>+</font> <font color = yellow>Greole</font> <font color = red>+</font> ------------------#
-		<br>#------------------------------------------------#
-		<br>#----------------- <font color = yellow>Instructions</font> -----------------#
-		<br>#--- <font color = yellow>To view a race, simply type <font color = green>view</font> <font color = #9900CC>racename</font></font> --#
-		<br>#--- <font color = yellow>To pick a race, simply type <font color = green>pick</font> <font color = #9900CC>racename</font></font> --#
-		<br>#---- <font color=yellow>To pick a race and class, simply type</font> -----#
-		[Fit_Text(" <font color=green>pick</font> <font color=#9900CC>race</font> <font color=#9900CC>class</font> ","Yellow",1)]
-		<br>#------------------------------------------------#
-		<br>#--- <font color = yellow>You can cancel the selection process at</font> ----#
-		<br># <font color = yellow>anytime by simply typing <font color = green>quit</font> to exit the game</font> #
-		<br>#------------------------------------------------#
-		<br>#------------------------------------------------#
-		<br>##################################################
-	"}
+	Race_Selection
 	const/Invalid_Format = {"
 	<center>##################################################
 		<br>#------------------------------------------------#
