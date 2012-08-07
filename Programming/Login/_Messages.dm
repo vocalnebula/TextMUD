@@ -1,3 +1,33 @@
+proc/Load_Races()
+	Race_Selection = {"
+	<center>##################################################
+		<br>#------------------------------------------------#
+		<br>#---------------- <font color = red><u>TextMUD Races</u></font> -----------------#
+	"}
+	var/list/Races = list()
+	for(var/V in typesof(/Race))
+		if(V == "/Race")
+			return
+		var/Race/R = text2path("[V]")
+		Races += new R
+	for(var/Race/R in Races)
+		if(R.Name)
+			var/Color = pick("Red","Blue","Green","White")
+			Race_Selection += "[Fit_Text(" <font color=[Color]>+</font> [R.Name] <font color=[Color]>+</font> ","Yellow",1)]"
+	Race_Selection += {" 
+		<br>#------------------------------------------------#
+		<br>#----------------- <font color = #66CCFF><u>Instructions</u></font> -----------------#
+		<br>#--- <font color = yellow>To view a race, simply type <font color = green>view</font> <font color = #9900CC>racename</font></font> --#
+		<br>#--- <font color = yellow>To pick a race, simply type <font color = green>pick</font> <font color = #9900CC>racename</font></font> --#
+		<br>#---- <font color=yellow>To pick a race and class, simply type</font> -----#
+		[Fit_Text(" <font color=green>pick</font> <font color=#9900CC>race</font> <font color=#9900CC>class</font> ","Yellow",1)]
+		<br>#------------------------------------------------#
+		<br>#--- <font color = yellow>You can cancel the selection process at</font> ----#
+		<br># <font color = yellow>anytime by simply typing <font color = green>quit</font> to exit the game</font> #
+		<br>#------------------------------------------------#
+		<br>#------------------------------------------------#
+		<br>##################################################
+	"}
 var
 	const/Opening_Message = {"
 	<center>##################################################
