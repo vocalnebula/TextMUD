@@ -25,6 +25,7 @@ client
 world/New()
 	..()
 	world.log = "Errors.txt"
+	Load_Races()
 client
 	var
 		X_Resolution
