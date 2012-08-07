@@ -92,11 +92,33 @@ client
 								[Fit_Text(" <u>+ [C.Class] +</u> ","#CCFFCC",1)]
 								[Fit_Text(C.Description)]
 								<br>#------------------------------------------------#
-								[Fit_Text(" <u>Starting Abilities</u> ","Green")]
+								[Fit_Text(" <u>Starting Abilities</u> ","Green",1)]
 							"}
 							for(var/V in C.Starting_Abilities)
 								Message += "[Fit_Text(V)]"
 							Message += {"
+								<br>#------------------------------------------------#
+								[Fit_Text(" <u>+ Strengths +</u> ","#66CCFF",1)]
+							"}
+							for(var/A in C.Strengths)
+								Message += "[Fit_Text(A)]"
+							Message += {"
+								<br>#------------------------------------------------#
+								[Fit_Text(" <u>+ Weaknesses +</u> ","#CCFFCC",1)]
+							"}
+							for(var/A in C.Weaknesses)
+								Message += "[Fit_Text(A)]"
+							Message += {"
+								<br>#------------------------------------------------#
+								[Fit_Text(" <u>+ Possible Races with Class +</u> ","#9900CC",1)]
+							"}
+							for(var/A in C.Available_Races)
+								Message += "[Fit_Text(A)]"
+							Message += {"
+								<br>#------------------------------------------------#
+								<br>#- <font color=yellow>To selection this class with a race, simply</font> --#
+								<br>#------------ <font color=yellow>type <font color=green>pick</font> <font color=#9900CC>race</font> <font color=#9900CC>class</font></font> --------------#
+								<br>#- <font color=yellow>To return to the selection process, type <font color=green>back</font></font>-#
 								<br>#------------------------------------------------#
 								<br>#------------------------------------------------#
 								<br>##################################################
