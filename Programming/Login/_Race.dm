@@ -25,6 +25,7 @@ client
 				Action = null
 				Space = findtext(T," ")
 				Command = null
+				Command_Two = null
 				Snippet = T
 				Spaces = 0
 			while(1)
@@ -34,7 +35,7 @@ client
 					Snippet = copytext(Snippet,Spaced + 1, lentext(Snippet) + 1)
 				else
 					break
-			if(Spaces > 1)
+			if(Spaces > 2)
 				Window_Refresh(usr,0,null,"SelectionO",Invalid_Format)
 				return
 			var/list/Races = list()
@@ -50,7 +51,14 @@ client
 				var/Classes/C = text2path("[V]")
 				Classes += new C
 			Action = copytext(T,1,Space)
-			Command = copytext(T,Space + 1, lentext(T) + 1)
+			if(Spaces > 1 && Action != "pick")
+				Window_Refresh(usr,0,null,"SelectionO",Invalid_Format)
+				return
+			if(Spaces == 1)
+				Command = copytext(T,Space + 1, lentext(T) + 1)
+			else
+				Command = copytext(T,Space + 1, findtext(T," ",Action))
+				Command_Two = copytext(T,Command + 1, lentext(T) + 1)
 			switch(ckey(Action))
 				if("view")
 					for(var/Race/R in Races)
@@ -126,27 +134,30 @@ client
 							Window_Refresh(usr,0,null,"SelectionO",Message)
 							return
 				if("pick")
-					for(var/Race/R in Races)
-						if(ckey(R.Name) == ckey(Command))
-							var/Message = {"
-							<center>##################################################
-								<br>#------------------------------------------------#
-								<br>#------------------------------------------------#
-								[Fit_Text(" <font color=red>+</font> <font color=white>[usr.name]</font> the <font color=#9900CC>[R.Name]</font> <font color=red>+</font> ","Yellow",1)]
-								<br>#------------------------------------------------#
-								<br>#----------------- <font color=yellow>Is this okay?</font> ---------------#
-								<br>#---------------------- <font color=green>yes</font> ---------------------#
-								<br>#---------------------- <font color=green>no</font> ----------------------#
-								<br>#------------------------------------------------#
-								<br>#--- <font color = yellow>Type <font color=green>yes</font> to confirm your race, and <font color=green>no</font> to</font> ---#
-								<br>#-------- <font color = yellow>return to the selection screen</font> --------#
-								<br>#------------------------------------------------#
-								<br>#------------------------------------------------#
-								<br>##################################################
-							"}
-							usr.Race_Selection = R.Name
-							winset(usr,"Selection","command=\"ConfirmRace\"")
-							Window_Refresh(usr,0,null,"SelectionO",Message)
-							return
+					if(!Command_Two)
+						for(var/Race/R in Races)
+							if(ckey(R.Name) == ckey(Command))
+								var/Message = {"
+								<center>##################################################
+									<br>#------------------------------------------------#
+									<br>#------------------------------------------------#
+									[Fit_Text(" <font color=red>+</font> <font color=white>[usr.name]</font> the <font color=#9900CC>[R.Name]</font> <font color=red>+</font> ","Yellow",1)]
+									<br>#------------------------------------------------#
+									<br>#----------------- <font color=yellow>Is this okay?</font> ---------------#
+									<br>#---------------------- <font color=green>yes</font> ---------------------#
+									<br>#---------------------- <font color=green>no</font> ----------------------#
+									<br>#------------------------------------------------#
+									<br>#--- <font color = yellow>Type <font color=green>yes</font> to confirm your race, and <font color=green>no</font> to</font> ---#
+									<br>#-------- <font color = yellow>return to the selection screen</font> --------#
+									<br>#------------------------------------------------#
+									<br>#------------------------------------------------#
+									<br>##################################################
+								"}
+								usr.Race_Selection = R.Name
+								winset(usr,"Selection","command=\"ConfirmRace\"")
+								Window_Refresh(usr,0,null,"SelectionO",Message)
+								return
+					else
+						world << output("test","DEBUG")
 				if("back")
 					Window_Refresh(usr,0,null,"SelectionO",Race_Selection)

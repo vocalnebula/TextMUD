@@ -14,7 +14,7 @@ proc/Load_Races()
 		if(R.Name)
 			var/Color = pick("Red","Blue","Green","White")
 			Race_Selection += "[Fit_Text(" <font color=[Color]>+</font> [R.Name] <font color=[Color]>+</font> ","Yellow",1)]"
-	Race_Selection += {" 
+	Race_Selection += {"
 		<br>#------------------------------------------------#
 		<br>#----------------- <font color = #66CCFF><u>Instructions</u></font> -----------------#
 		<br>#--- <font color = yellow>To view a race, simply type <font color = green>view</font> <font color = #9900CC>racename</font></font> --#
